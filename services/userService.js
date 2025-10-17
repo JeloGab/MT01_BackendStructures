@@ -5,8 +5,8 @@ const getAllUsers = async () => {
 }
 
 const createUser = async(data) => {
-    const User = new User(data);
-    return await User.save();
+    const user = new User(data);
+    return await user.save();
 };
 
-export default{getAllUsers,createUser};
+export default { getAllUsers, createUser };
